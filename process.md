@@ -1,4 +1,4 @@
-# Intro_research_methods
+# Guide on how to use the script
 
 With this shell script, I counted how many times the article 'de' appeared in the Wikipedia page of the Rijksuniversiteit of Groningen.
 
