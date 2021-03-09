@@ -1,12 +1,13 @@
 This shell script takes the Wikipedia page of the Rijksuniversiteit Groningen and counts how many times the article 'de' appears on the page.
 
+
 Here I will explain what everything in the script does, for every part of the code (seperated with pipes ('|')):
+
 wget https://nl.wikipedia.org/wiki/Rijksuniversiteit_Groningen -q -O - :
 wget = used to retrieve files from web servers (followed by the link of the web you want to use)
 -q = turns off wget's output
 -O = writes to a file 
 - = 'file' where it is been written to
-
 
 grep -o -i -w 'de' :
 grep = print lines matching a pattern
@@ -15,9 +16,9 @@ grep = print lines matching a pattern
 -w = checking for full words, not for sub-strings
 'de' = the word you want to count
 
-
 wc -l :
 wc = print newline, word, and byte counts for each file
 -l = counts the lines
+
 
 The output should be equal to this, if you use the same script with the same word and on the same page: 311
